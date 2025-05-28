@@ -1,0 +1,74 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:418668481072:task-definition/webapp-devops-workshop:1",
+    "containerDefinitions": [
+        {
+            "name": "webapp",
+            "image": "<IMAGE1_NAME>",
+            "cpu": 0,
+            "links": [],
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "entryPoint": [],
+            "command": [],
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "secrets": [],
+            "dnsServers": [],
+            "dnsSearchDomains": [],
+            "extraHosts": [],
+            "dockerSecurityOptions": [],
+            "dockerLabels": {},
+            "ulimits": [],
+            "systemControls": [],
+            "credentialSpecs": []
+        }
+    ],
+    "family": "webapp-devops-workshop",
+    "taskRoleArn": "arn:aws:iam::418668481072:role/devops-cluster-TaskRole-mnB6vOk7Tcx9",
+    "executionRoleArn": "arn:aws:iam::418668481072:role/ECSTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2025-05-28T08:36:24.199Z",
+    "registeredBy": "arn:aws:sts::418668481072:assumed-role/vscode-server-VSCodeInstanceRole-4cOnpVj2YXsk/i-0fdc84776ec007d91",
+    "tags": []
+}
